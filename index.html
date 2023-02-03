@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <article class="main1">
+        <h2>Astronomy Picture of the Day</h2>
+        <img id="apod_image" />
+        <h3 id="apod_title"></h3>
+        <h4 id="apod_date"></h4>
+        <p id="apod_explanation"></p>
+      </article>
+      <article class="main2">
+        <h2>Mars Rover Photos</h2>
+        <img id="mars_image"/>
+        <h3 id="mars_rover"></h3>
+        <h4 id="mars_sol"></h4>
+        <p id="mars_earth"></p>
+      </article>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+    <script>
+      let myAnimation = anime({
+        targets: ".main1",
+        translateX: 100,
+        borderRadius: 50,
+        duration: 1000,
+        easing: 'linear',
+        direction: 'alternate'
+      });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
